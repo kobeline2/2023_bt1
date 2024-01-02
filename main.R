@@ -1,3 +1,4 @@
+source('param.R')
 source(MODEL_PATH)
 # result(特徴量)カラムをデータフレームに追加
 all_data$result <- NA  # 初期値はNA
