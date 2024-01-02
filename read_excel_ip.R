@@ -1,7 +1,7 @@
 library(readxl)
 
 # Excelファイルのパス
-file_path <- "C:\\Users\\yukia\\Downloads\\201409_Experimental conditions (ETH-VAW)ForR .xlsx"
+file_path <- EXCEL_PATH
 
 # よみたいExcelファイル内のシート名を指定
 sheet_names <- as.list(as.character(1:10))
