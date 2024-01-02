@@ -1,5 +1,4 @@
-do_process <- function(x) {
+do_process <- function(x, y) {
   # 何もしない
-  sin()
   return(NaN)
 }
