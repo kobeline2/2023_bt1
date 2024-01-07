@@ -1,4 +1,4 @@
-do_process <- function(data){
+do_process <- function(data, metadata){
   z = 
   return(z)
 }

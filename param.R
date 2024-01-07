@@ -6,4 +6,4 @@ skip_values <- c(206, 155, 104, 52, 53, 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8, 0, 308, 309,
 isdebug <- F
 
 # time series model path
-MODEL_PATH <- file.path('model', 'do_nothing.R')
+MODEL_PATH <- file.path('model', 'average_sum.R')
