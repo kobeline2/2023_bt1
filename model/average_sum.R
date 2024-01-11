@@ -1,4 +1,8 @@
-do_process <- function(data){
-  z = sum(abs((data[, 1] - mean(data[, 1]))/all_data$duration[i]), na.rm = TRUE)
+do_process <- function(data, metadata){
+  m <- mean(data)
+  # L1
+  z = sum(abs(data - m), na.rm = TRUE)/metadata$duration
+  # L2
+  # z = sqrt(sum((data - m)^2, na.rm = TRUE)/metadata$duration)
   return(z)
 }
