@@ -1,4 +1,4 @@
-do_process <- function(data){
-  z = max(data[, 1], na.rm = TRUE)
+do_process <- function(data, metadata){
+  z = max(data, na.rm = TRUE)
   return(z)
 }
