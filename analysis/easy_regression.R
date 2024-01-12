@@ -6,7 +6,8 @@ d <- na.omit(d)
 d$x <- log(d$result)
 d$y <- log((d$mass / d$duration)/1000)
 #d$y <- d$Ds
-
+d <- d[complete.cases(d),]
+d <- d[apply(d, 1, function(x) all(is.finite(x))),]
 # linear regression ----
 plot(y~x, data=d, log = "xy")
 plot(y~x, data=d)
@@ -21,3 +22,5 @@ result <- nls(y ~ a*exp(b*x),
            trace=TRUE)
 summary(result)
 plot_result_nls(result, d)
+
+
