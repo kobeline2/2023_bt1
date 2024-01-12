@@ -12,6 +12,7 @@ data/
 
 # User-specific files
 .Ruserdata
+param.R
 
 # Example code in package build process
 *-Ex.R
