@@ -1,3 +1,5 @@
+rm( list = ls( envir = globalenv() ), envir = globalenv() )
+
 library(dplyr)
 # library(foreach)
 # library(doParallel)
