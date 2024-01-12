@@ -1,11 +1,11 @@
 # apply fundamental regression
 
 # data -----------
-d <- select(all_data, 'Ds', 'duration', 'result')
+d <- select(all_data, 'Ds', 'mass', 'duration', 'result')
 d <- na.omit(d)
-d$x <- d$result
-# d$y <- (d$mass / d$duration)/1000
-d$y <- d$Ds
+d$x <- log(d$result)
+d$y <- log((d$mass / d$duration)/1000)
+#d$y <- d$Ds
 
 # linear regression ----
 plot(y~x, data=d, log = "xy")

@@ -1,5 +1,4 @@
-do_process <- function(data, this_excel){
-  dd <- data[, 1]
+do_process <- function(data, metadata){
     # GARCHモデルの設定
     spec <- ugarchspec(variance.model = list(model = "sGARCH",
                                              garchOrder = c(1, 1)),
@@ -8,7 +7,7 @@ do_process <- function(data, this_excel){
                        distribution.model = "norm")
   
   # GARCHモデルの適用
-  garch_model <- ugarchfit(spec, data = dd)
+  garch_model <- ugarchfit(spec, data = data)
   
   # モデルの概要を表示
   
