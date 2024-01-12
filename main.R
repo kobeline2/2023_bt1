@@ -7,7 +7,7 @@ main <- function(all_data, WAVE_TXT_PATH, isdebug, skip_values, sensor) {
   for (i in seq_along(all_data$Run)) {
     data_id <- all_data$Run[i]
     if (data_id %in% skip_values) {next}
-    file_path <- sprintf(WAVE_TXT_PATH, data_id)  
+    file_path <- sprintf(WAVE_TXT_PATH, data_id)
     data <- read.table(
       file_path,
       header = TRUE,
