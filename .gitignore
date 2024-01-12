@@ -1,6 +1,7 @@
 *.asv
 .DS_Store
 data/
+res/
 
 # History files
 .Rhistory
