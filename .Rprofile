@@ -1,4 +1,4 @@
-rm( list = ls( envir = globalenv() ), envir = globalenv() )
+rm(list = ls())
 
 library(dplyr)
 # library(foreach)
