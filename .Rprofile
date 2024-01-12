@@ -1,4 +1,10 @@
 library(dplyr)
+# library(foreach)
+# library(doParallel)
+# 
+# # parallel computation
+# no_cores <- detectCores() - 1
+# registerDoParallel(no_cores)
 
 # excel file
 EXCEL_PATH <- file.path("data",
