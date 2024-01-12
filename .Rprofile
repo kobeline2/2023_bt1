@@ -1,5 +1,3 @@
-rm(list = ls())
-
 library(dplyr)
 # library(foreach)
 # library(doParallel)
