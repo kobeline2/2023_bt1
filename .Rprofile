@@ -1,10 +1,4 @@
 library(dplyr)
-# library(foreach)
-# library(doParallel)
-# 
-# # parallel computation
-# no_cores <- detectCores() - 1
-# registerDoParallel(no_cores)
 
 # excel file
 EXCEL_PATH <- file.path("data",
@@ -12,9 +6,10 @@ EXCEL_PATH <- file.path("data",
 # wave file with regular expression %d
 WAVE_TXT_PATH <- file.path('data', 'waveTxt', 'data%d.txt')
 source(file.path("utils", "read_excel_ip.R"))
-
 rm(list = setdiff(ls(), c('EXCEL_PATH', 
                           'WAVE_TXT_PATH',
                           "MODEL_PATH",
                           "all_data")))
 source(file.path("utils", "funcs.R"))
+source(file.path("utils", "main_func_single.R"))
+source(file.path("utils", "main_func_parallel.R"))
