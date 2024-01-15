@@ -10,9 +10,9 @@
 
 This project depends on the following libraries and tools:
 
-- **Library1**: Description of Library1 and why it's used.
-- **Library2**: Description of Library2 and its purpose in the project.
-- **Library3**: Explanation of how Library3 is used.
+- **dplyr**: For data manipulation.
+- **readxl**: For reading Excel files.
+- **parallel**: For parallel computing.
 
 ## `.gitignore`で除外されている重要なファイル/ディレクトリ
 
