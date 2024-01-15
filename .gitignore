@@ -3,6 +3,7 @@
 data/
 res/
 memo.R
+my_log.txt
 
 # History files
 .Rhistory
