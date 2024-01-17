@@ -1,5 +1,6 @@
 do_process <- function(data, metadata){
   # ARMA-GARCHモデルの設定
+  library(rugarch)
   spec <- ugarchspec(variance.model = list(model = "sGARCH", garchOrder = c(1, 1)),
                      mean.model = list(armaOrder = c(1, 1), include.mean = TRUE),
                      distribution.model = "norm")#distribution.modelは使用する確率分布

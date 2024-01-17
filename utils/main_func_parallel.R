@@ -20,6 +20,7 @@ main_func_parallel <- function(all_data, WAVE_TXT_PATH, isdebug, sensor, np) {
     log_conn <- file(fn, open = "a")
     message_text <- paste(i, "/", dim(all_data)[1], " has done.")
     cat(message_text, "\n", file = log_conn) 
+    return(res)
   }
   
   res <- parLapply(cl,
