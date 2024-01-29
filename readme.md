@@ -36,5 +36,6 @@ This project depends on the following libraries and tools:
 ### `do nothing`
 - returns NaN
 
-### `
+### `max`
+- 絶対値を取って最大値をとる. 
 
