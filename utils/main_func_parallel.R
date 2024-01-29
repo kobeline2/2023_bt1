@@ -15,7 +15,8 @@ main_func_parallel <- function(all_data, WAVE_TXT_PATH, isdebug, sensor, np) {
     data <- read.table(file_path,
                        header = TRUE,
                        colClasses = c("numeric", "numeric"))
-    res <- do_process(data[, sensor], all_data[i, ])
+    d <- data[, sensor] - mean(data[, sensor])
+    res <- do_process(d, all_data[i, ])
     
     log_conn <- file(fn, open = "a")
     message_text <- paste(i, "/", dim(all_data)[1], " has done.")

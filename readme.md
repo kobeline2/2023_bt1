@@ -32,3 +32,7 @@ This project depends on the following libraries and tools:
 - **理由**: このファイルには環境固有の設定や機密情報が含まれており, Gitリポジトリでの追跡から除外されています.
 - **セットアップ**: 新しい開発者は, `param_example.R`（プロジェクト内にあるサンプルファイル）をコピーして`param.R`という名前で同じディレクトリに保存し, 自分の環境に合わせて内容を編集する必要があります.このファイルはプロジェクトのルートディレクトリに置く必要があります.
 
+## Models (in ```model/```)
+### `do nothing`
+- returns ori
+
