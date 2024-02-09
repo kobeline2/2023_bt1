@@ -7,7 +7,8 @@ main_func_single <- function(all_data, WAVE_TXT_PATH, isdebug, sensor) {
                        header = TRUE,
                        colClasses = c("numeric", "numeric"))
     # 各データに対する処理
-    all_data$result[i] <- do_process(data[, sensor], all_data[i, ])
+    d <- data[, sensor] - mean(data[, sensor])
+    all_data$result[i] <- do_process(d, all_data[i, ])
     if (i %% 50 == 0) {
       cat(sprintf("%.1f%% done\n", (i * 100 / length(
         all_data$Run

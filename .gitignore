@@ -2,8 +2,10 @@
 .DS_Store
 data/
 res/
+tmp/
 memo.R
 my_log.txt
+
 
 # History files
 .Rhistory
