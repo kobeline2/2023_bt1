@@ -1,4 +1,13 @@
+## library
 library(dplyr)
+library(xts)
+library(fGarch)
+library(rugarch)
+library(forecast)
+library(tseries)
+library(ggplot2)
+library(ggfortify)
+library(gridExtra)
 
 # excel file
 EXCEL_PATH <- file.path("data",

@@ -9,23 +9,6 @@ fn = "plot.png"
 w = 8
 h = 5
 
-custom_theme <- function(font, fsz, w, h, fn) {
-  theme_classic()+
-  theme_minimal(base_family = font, base_size = fsz) +  # 基本のテキストサイズを9ptに設定
-  theme(
-    plot.margin = margin(t = 0.2, r = 0.2, b = 0.2, l = 0.2, "cm"),
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
-    plot.title = element_text(size = fsz, color = "black", family = font),
-    axis.title.x = element_text(hjust = 0.5, vjust = 0,  size = fsz, color = "black", family = font),
-    axis.title.y = element_text(hjust = 1.0, vjust = 0, size = fsz, color = "black", family = font),
-    axis.text.x = element_text(hjust = 0.5, vjust = 0.0, size = fsz, color = "black", family = font),
-    axis.text.y = element_text(hjust = 0.5, vjust = 0.5, size = fsz, color = "black", family = font),
-    panel.border = element_rect(color = "black", fill = NA, linewidth = 1),
-    axis.ticks = element_line(color = "black")
-  )
-}
-
 #####
 data_id = 100
 sensor = 1
